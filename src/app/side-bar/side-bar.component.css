@@ -1,0 +1,15 @@
+/* Sidebar */
+.sidebar {
+    @apply bg-gray-800 text-white w-64 space-y-6 p-5 fixed inset-y-0 left-0 transform transition-all ease-in-out duration-300 z-10;
+  }
+  
+  /* Mobile */
+  @media (max-width: 1024px) {
+    .sidebar {
+      @apply -translate-x-full; /* Initially hidden */
+    }
+    .sidebar.open {
+      @apply translate-x-0; /* Show when toggled */
+    }
+  }
+  
