@@ -1,13 +1,15 @@
+import { Component, EventEmitter, HostListener, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-side-bar',
-  imports: [CommonModule],
+  standalone: true,
+  imports: [CommonModule], 
   templateUrl: './side-bar.component.html',
-  styleUrl: './side-bar.component.css'
+  styleUrls: ['./side-bar.component.css']
 })
 export class SideBarComponent {
+  @Output() sidebarToggled = new EventEmitter<void>();
   isSidebarOpen = true; 
   isMobile = false; 
 

@@ -1,0 +1,25 @@
+.sidebar {
+    width: 250px;
+    background-color: #f8f9fa;
+    padding: 10px;
+  }
+  
+  .sidebar .search {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar .categories {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar .products {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar .product {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  

@@ -1,13 +1,17 @@
+// src/app/app.component.ts
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { SideBarComponent } from './side-bar/side-bar.component';
+import { CommonModule } from '@angular/common';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { MotherComponent } from './mother/mother.component';
+
 
 @Component({
   selector: 'app-root',
-  imports: [SideBarComponent],
+  standalone: true,
+  imports: [MotherComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-angular-app';
+  title = 'pharmacy-app';
 }
