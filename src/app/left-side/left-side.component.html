@@ -1,0 +1,44 @@
+<div class="bg-white w-full h-full flex flex-col  items-center p-6">
+    <!-- Selector and Button -->
+    <div class="mb-6 flex items-center gap-4">
+        <app-selector-two></app-selector-two>
+        <button class="btn btn-accent">Add Customer</button>
+    </div>
+
+    <!-- Scrollable Table Container -->
+    <div class="w-full max-w-6xl overflow-x-auto">
+        <div class="max-h-80 overflow-y-auto border border-gray-300 rounded-lg">
+            <table class="table table-xs table-pin-rows table-pin-cols w-full">
+                <thead class="sticky top-0 bg-gray-100 shadow-md">
+                    <tr>
+                        <th>#</th>
+                        <th>Item</th>
+                        <th>Unit</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>Dis%</th>
+                        <th>Subtotal</th>
+                        <th>Act</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Napa</td>
+                        <td>10</td>
+                        <td>100</td>
+                        <td>10</td>
+                        <td>99</td>
+                        <td>300</td>
+                        <button class="btn btn-error btn-xs">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
