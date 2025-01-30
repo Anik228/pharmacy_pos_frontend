@@ -1,0 +1,57 @@
+.select-wrapper {
+    position: relative;
+    width: 80px;
+}
+
+.custom-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 4px 24px 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+    position: relative;
+}
+
+.select-wrapper::after {
+    content: '';
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #2563eb;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Style for the dropdown */
+.custom-select option {
+    background: white;
+}
+
+/* Ensure select dropdown appears above scrollable content */
+.custom-select:focus {
+    z-index: 2;
+}
+
+/* Add to ensure proper stacking in scrollable container */
+td {
+    position: relative;
+    background-color: white;
+}
+
+/* Ensure table header stays on top */
+thead.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #f3f4f6;
+}
