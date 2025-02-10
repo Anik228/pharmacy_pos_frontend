@@ -1,0 +1,42 @@
+<header class="header-container">
+    <!-- Logo section -->
+     <div class="logo-section">
+        <img [src] ="ImagePath" alt="Logo" class="w-[60px] h-[60px]">
+     </div>
+      
+  
+    <!-- Main buttons group -->
+    <div class="main-buttons-group">
+      <button class="btn btn-outline-primary rounded-pill me-2">Report</button>
+      <button class="btn btn-outline-primary rounded-pill me-2">Return</button>
+      <button class="btn btn-outline-primary rounded-pill me-2">Recent</button>
+      <button class="btn btn-outline-primary rounded-pill">Draft</button>
+    </div>
+  
+    <!-- User actions group -->
+    <div class="user-actions-group">
+      <button class="btn btn-outline-primary rounded-pill me-2">Screen</button>
+      
+      <!-- Profile section with dropdown -->
+      <div class="relative inline-block dropdown">
+        <button class="flex items-center focus:outline-none">
+          <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" alt="Profile" class="w-10 h-10 rounded-full object-cover border-2 border-blue-500">
+        </button>
+        
+        <!-- Dropdown menu -->
+        <div class="dropdown-menu absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg">
+          <div class="py-1">
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">View Profile</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Settings</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Help</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Sign out</a>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-outline-primary rounded-pill me-2">Exit</button>
+      <div class="three-dots">
+        <i class="fas fa-ellipsis-v"></i>
+      </div>
+    </div>
+  </header> 
